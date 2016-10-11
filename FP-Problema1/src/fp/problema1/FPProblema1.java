@@ -14,21 +14,21 @@ public class FPProblema1 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) { //Calcular si un año es bisiesto
         int a;
         a = solicitarAnyo();
         calcularymostrar(a);
     }
 
         
-    public static int solicitarAnyo() {
+    public static int solicitarAnyo() { //Solicitar numero de año
         System.out.print("Introduce el año");
         Scanner teclado = new Scanner(System.in);
         int a;
         a = teclado.nextInt();
         return a;
     }
-    public static void calcularymostrar(int a) {
+    public static void calcularymostrar(int a) { //Calcular si es bisiest y mostrar resultado
         if ((a % 4)== 0) {
         } else { 
         System.out.println("El año no es bisiesto");
