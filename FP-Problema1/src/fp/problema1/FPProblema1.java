@@ -28,7 +28,7 @@ public class FPProblema1 {
         a = teclado.nextInt();
         return a;
     }
-    public static void calcularymostrar(int a) { //Calcular si es bisiest y mostrar resultado
+    public static void calcularymostrar(int a) { //Calcular si es bisiesto y mostrar resultado
         if ((a % 4)== 0) {
         } else { 
         System.out.println("El año no es bisiesto");
