@@ -16,9 +16,7 @@ public class FPProblema2 {
      */
     public static void main(String[] args) {
         float d;
-        double y;
-        double p;
-        double mi;
+        double y,p,mi;
         
         d = solicitarDato();
         y = convertirYardas(d);
