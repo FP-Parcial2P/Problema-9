@@ -14,7 +14,7 @@ public class Problema6 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) { //Programa para calcular salario
         float p,h; 
         p = solicitarPago(); 
         h = solicitarHoras();
