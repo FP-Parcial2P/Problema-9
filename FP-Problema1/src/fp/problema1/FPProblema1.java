@@ -16,8 +16,8 @@ public class FPProblema1 {
      */
     public static void main(String[] args) { //Calcular si un año es bisiesto
         int a;
-        a = solicitarAnyo();
-        calcularymostrar(a);
+        a = solicitarAnyo(); //Aqui se pide el año
+        calcularymostrar(a); //Aqui se muestra si es o no bisiesto
     }
 
         
@@ -29,17 +29,10 @@ public class FPProblema1 {
         return a;
     }
     public static void calcularymostrar(int a) { //Calcular si es bisiesto y mostrar resultado
-        if ((a % 4)== 0) {
-        } else { 
-        System.out.println("El año no es bisiesto");
-            } 
-        if((a % 100)== 0) {
-        } else { System.out.print("El año es bisiesto");
-        }
-        if ((a % 400)== 0) {
-        System.out.println("El año es bisiesto");
-            }else { 
-        System.out.println("El año no es bisiesto");
-            } 
-    }
+        if ( ((a%4) == 0) && ((a % 100) != 0) || ((a % 400) == 0) )
+         { System.out.println("El año " + a + " es bisiesto"); }
+        else { System.out.println("El año " + a + " no es bisiesto");}
+    
+        
+}
 }
