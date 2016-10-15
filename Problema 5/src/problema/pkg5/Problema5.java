@@ -27,23 +27,13 @@ public class Problema5 {
         return x;
     }
     public static void calcularymostrarTipo(int x){
-    if (x == 0) {
-    mostrarOtro();
-    System.exit(0);
-    }
-    else if (x==1) {
-    mostrarOtro();
-    System.exit(0);
-    }
-    else if (x == 2) {
-    mostrarPrimo();
-    }
-    else if ((x /2)==0){
-    mostrarOtro();
-    System.exit(0);
-    }
-    else if ((x/x)==1){
-        mostrarPrimo();
+       int a;
+       a = x -1;
+       while  ((x%a) != 0) {
+       a --;
+       }
+       if (a==1){ mostrarPrimo(); }
+       else { mostrarOtro();
     }
     }
     public static void mostrarPrimo(){
