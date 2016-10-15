@@ -29,10 +29,10 @@ public class Problema5 {
     public static void calcularymostrarTipo(int x){
        int a;
        a = x -1;
-       while  ((x%a) != 0) {
-       a --;
+       while  ((x%a) != 0) { // Mientras que el residuo sea diferente de cero
+       a --;                 //Disminuir a 
        }
-       if (a==1){ mostrarPrimo(); }
+       if (a==1){ mostrarPrimo(); } //Si a llega hasta el 1 mostrar que es primo
        else { mostrarOtro();
     }
     }
