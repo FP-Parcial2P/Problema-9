@@ -15,9 +15,11 @@ public class Problema5 {
      * @param args the command line arguments
      */
     public static void main(String[] args) { //Calcular si un numero es primo o no
-        int x; //grados celsius y cesius
+        int x; // Numero solicitado
+        int a; //ayuda a resolver el calculo
         x = solicitarNumero(); // solocitar el numero
-        calcularymostrarTipo(x); // convertir a grados Farenheit
+        a = x-1;
+        calcularymostrarTipo(x,a); 
     }
     public static int solicitarNumero(){
         int x;
@@ -26,9 +28,7 @@ public class Problema5 {
         x = teclado.nextInt();
         return x;
     }
-    public static void calcularymostrarTipo(int x){
-       int a;
-       a = x -1;
+    public static void calcularymostrarTipo(int x, int a){
        while  ((x%a) != 0) { // Mientras que el residuo sea diferente de cero
        a --;                 //Disminuir a 
        }
@@ -37,10 +37,10 @@ public class Problema5 {
     }
     }
     public static void mostrarPrimo(){
-        System.out.println("El numero es primo");    
+        System.out.println("El numero" + a + " es primo");    
     }
     public static void mostrarOtro(){
-        System.out.println("El numero no es primo");
+        System.out.println("El numero" + a + " no es primo");
     }
 }
 
