@@ -14,7 +14,7 @@ public class Problema8 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) { //Obtener hipotenusa mediante dos catetos
+    public static void main(String[] args) { //Obtener hipotenusa mediante dos catetos que sean positivos
         double a,b,h; // cateto a, cateto b, hipotenusa h 
         a = solicitarCatetos(); // Pedimos el primer y segundo cateto en el mismo método
         b = solicitarCatetos();
@@ -23,11 +23,16 @@ public class Problema8 {
     }
     public static double solicitarCatetos(){
     double c;
-    System.out.println("Introduce el primer cateto y posteriormente el segundo cateto");
+    System.out.println("Introduce el primer cateto y posteriormente el segundo cateto. Ambos tienen que ser positivos");
     Scanner teclado = new Scanner(System.in);
     c = teclado.nextDouble();
+    if (c>0){
+    return c;}
+    else { System.out.println("Los catetos tienen que ser positivos. Vuelve a correr el programa."); System.exit(0); 
+    }
     return c;
-}
+    }
+    
     public static double obtenerHipotenusa(double a , double b){
         double h;
         h = Math.sqrt(Math.pow(a,2) + Math.pow(b,2));
