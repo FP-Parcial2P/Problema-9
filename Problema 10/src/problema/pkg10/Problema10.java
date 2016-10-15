@@ -22,7 +22,7 @@ public class Problema10 {
         n = solicitarCantidad(); // Pedir cantidad de numero de la serie Fibonacci
         calcularYMostrarNumerosDeseados(n,a,b,x);
     }
-    public static int solicitarCantidad(){
+    public static int solicitarCantidad(){ 
         int n;
         Scanner teclado = new Scanner(System.in);
         System.out.println("Introduce la cantindad de los primero numeros de la serie Fibonacci que deseas");
@@ -32,8 +32,8 @@ public class Problema10 {
     public static void calcularYMostrarNumerosDeseados(int n, int a, int b, int x){
         int i; 
         System.out.println("*Serie Fibonacci*");
-        System.out.println(b);
-        for (i=0; i<n-1; i++) {
+        System.out.println(b); //A partir del 1
+        for (i=0; i<n-1; i++) { // n - 1 debido ya que b contará como un digito mas los numeros deseados
             System.out.println(x);
             a = b;
             b = x;
