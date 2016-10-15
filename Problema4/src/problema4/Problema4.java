@@ -14,8 +14,8 @@ public class Problema4 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        float c,f; //grados celsius y cesius
+    public static void main(String[] args) { //Programa para convertir °C a °F
+        float c,f; //grados celsius y farenheit
         c = solicitarDato(); // solocitar °C
         f = convertirGrados(c); // convertir a grados Farenheit
         mostrarFarenheit(c,f); //mostrar °C convertidos a °F
