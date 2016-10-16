@@ -23,12 +23,12 @@ public class Problema8 {
     }
     public static double solicitarCatetos(){
     double c;
-    System.out.println("Introduce el primer cateto y posteriormente el segundo cateto. Ambos tienen que ser positivos");
+    System.out.println("Introduce el valor de los catetos. Ambos tienen que ser positivos");
     Scanner teclado = new Scanner(System.in);
     c = teclado.nextDouble();
-    if (c>0){
-    return c;}
-    else { System.out.println("Los catetos tienen que ser positivos. Vuelve a correr el programa."); System.exit(0); 
+    while (c<0){ 
+        System.out.println("Los catetos tienen que ser positivos. Vuelve a introcirlos."); 
+        c = teclado.nextDouble();
     }
     return c;
     }
