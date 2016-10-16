@@ -34,7 +34,7 @@ public class Problema9 {
       String var = (num);
       char cad[];
       cad = var.toCharArray(); 
-      { System.out.println( num + " = " + cad[0] + "000 + " + cad[1] + "00 + " + cad[2] +"0 +" + cad[3]);
+      { System.out.println( num + " = " + cad[0] + "000 + " + cad[1] + "00 + " + cad[2] +"0 + " + cad[3]);
       }
     }
 }
