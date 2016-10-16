@@ -27,7 +27,7 @@ public class Problema8 {
     Scanner teclado = new Scanner(System.in);
     c = teclado.nextDouble();
     while (c<0){ 
-        System.out.println("Los catetos tienen que ser positivos. Vuelve a introcirlos."); 
+        System.out.println("Los catetos tienen que ser positivos. Vuelve a introducirlos."); 
         c = teclado.nextDouble();
     }
     return c;
